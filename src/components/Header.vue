@@ -7,7 +7,7 @@
             <nav>
                 <ul>
                     <li v-for="object, i in navList" :key="i">
-                        <a :href="object.path">{{object.text}}</a>
+                        <a :href="object.path" :class="i === selectedPage ? 'active' : ''">{{object.text}}</a>
                     </li>
                 </ul>
             </nav>
@@ -20,6 +20,7 @@ export default {
   name: 'Header',
   data() {
       return {
+          selectedPage: 1,
           navList: [
               {
                   text: "characters",
@@ -86,6 +87,13 @@ export default {
             a {
                 color: black;
                 text-decoration: none;
+                line-height: 150px;
+                display: inline-block;
+
+                &.active {
+                    border-bottom: 5px solid #0282f9;
+                    color: #0282f9;
+                }
             }
         }
     }

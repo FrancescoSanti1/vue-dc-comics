@@ -1,10 +1,13 @@
 <template>
     <section>
+        <div class="btn series">current series</div>
+
         <div class="container">
             <Item v-for="object, i in itemsList" :key="i"
             :img="object.thumb"
             :text="object.series"/>
         </div>
+        <div class="btn more">load more</div>
     </section>
 </template>
 
@@ -100,9 +103,42 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-    .container {
+
+    section {
+
+        padding: 50px 0 20px;
+        background-color: #1c1c1c;
+        color: white;
+        position: relative;
+
+        .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: #0282f9;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            width: 200px;
+            padding: 10px 0;
+            cursor: pointer;
+            font-weight: bold;
+
+            &.series {
+                position: absolute;
+                left: 10%;
+                top: -20px;
+                font-size: 20px;
+            }
+
+            &.more {
+                margin: 30px auto 0;
+                font-size: 14px;
+            }
+        }
     }
+    
 </style>
