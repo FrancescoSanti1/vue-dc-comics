@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <main>
-      <div>content goes here</div>
+      <Items/>
     </main>
     <Banner/>
     <Footer/>
@@ -13,13 +13,15 @@
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Banner from './components/Banner.vue';
+import Items from './components/Items.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
-    Banner
+    Banner,
+    Items
   }
 }
 </script>
@@ -40,7 +42,7 @@ export default {
 
 main {
   padding: 50px 0;
-  background-color: black;
+  background-color: #1c1c1c;
   color: white;
 }
 

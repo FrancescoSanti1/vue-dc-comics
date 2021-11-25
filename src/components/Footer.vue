@@ -94,11 +94,27 @@ export default {
                           path: "#"
                       },
                       {
+                          text: "Ad Choices",
+                          path: "#"
+                      },
+                      {
                           text: "Advertising",
                           path: "#"
                       },
                       {
+                          text: "Jobs",
+                          path: "#"
+                      },
+                      {
                           text: "Subscription",
+                          path: "#"
+                      },
+                      {
+                          text: "Ratings",
+                          path: "#"
+                      },
+                      {
+                          text: "Shop Help",
                           path: "#"
                       },
                       {
@@ -151,15 +167,16 @@ export default {
                 flex-direction: column;
                 flex-wrap: wrap;
                 align-content: flex-start;
-                // debug
-                height: 350px;
+                height: 400px;
 
                 nav {
                     margin: 0 10px 20px 0;
+                    width: 150px;
 
                     h3 {
                         text-transform: uppercase;
                         color: white;
+                        margin-bottom: 5px;
                     }
 
                     ul {
@@ -179,7 +196,7 @@ export default {
             background-color: #303030;
 
             .container {
-                height: 150px;
+                height: 100px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;

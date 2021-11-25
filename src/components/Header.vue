@@ -7,7 +7,7 @@
             <nav>
                 <ul>
                     <li v-for="object, i in navList" :key="i">
-                        <a :href="navList[i].path">{{navList[i].text}}</a>
+                        <a :href="object.path">{{object.text}}</a>
                     </li>
                 </ul>
             </nav>
