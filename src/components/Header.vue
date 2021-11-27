@@ -70,6 +70,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+    @import "@/styles/_variables.scss";
+
     header {
 
         .container {
@@ -91,8 +94,8 @@ export default {
                 display: inline-block;
 
                 &.active {
-                    border-bottom: 5px solid #0282f9;
-                    color: #0282f9;
+                    border-bottom: 5px solid $brand-color;
+                    color: $brand-color;
                 }
             }
         }

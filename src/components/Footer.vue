@@ -152,6 +152,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+    @import "@/styles/_variables.scss";
+
     footer {
 
         #footer-top {
@@ -205,7 +208,7 @@ export default {
                     color: white;
                     text-transform: uppercase;
                     padding: 10px;
-                    border: 2px solid #0282f9;
+                    border: 2px solid $brand-color;
                 }
 
                 #social {
@@ -214,7 +217,7 @@ export default {
                     align-items: center;
 
                     .text {
-                        color: #0282f9;
+                        color: $brand-color;
                         text-transform: uppercase;
                         font-weight: bold;
                         margin-right: 10px;

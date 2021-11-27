@@ -104,6 +104,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+    @import "@/styles/_variables.scss";
+
     section {
 
         padding: 50px 0 20px;
@@ -118,7 +120,7 @@ export default {
         }
 
         .btn {
-            background-color: #0282f9;
+            background-color: $brand-color;
             color: white;
             text-transform: uppercase;
             text-align: center;
